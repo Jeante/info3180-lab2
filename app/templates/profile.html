@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+
+<img src="{{ url_for('static', filename='me.JPG') }}" style="width:150px;height:150px;border-radius:250px" align="middle">
+<p> <h1>Jeante Boreland</h1> </p>
+<h6>@jblaze</h6>
+<h6>Montego Bay, Jamaica</h6>
+<h6>{{now}}</h6>
+
+<h6> I am a smart and talented young man who loves website design and development. Contact me if you'd like to work together on a new project.</h6> 
+<br>
+<div class=container1>
+<div class="box1">
+<h6> 7 </h6>
+<h6> Posts </h6>
+
+</div>     
+<div class="box2">
+    <h6> 100 </h6>
+    <h6> Following </h6>
+</div>   
+<div class="box3">
+    <h6> 250 </h6>
+    <h6> Following </h6>
+    </div>   
+</div>
+
+<button type="button">Follow </button>
+
+
+
+{% endblock %}
